@@ -1,10 +1,14 @@
 
 import './App.css';
-import NavBar from './navBar';
+import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap/dist/js/bootstrap.bundle.min.js"
+import navBar from './navBar'
 
 function App() {
   return (
-    <h1>Holaaaaa</h1>
+    <div className='App'>
+    <navBar/>
+    </div>
   );
 }
 
