@@ -2,7 +2,7 @@ import React from 'react';
 import  Item from'../Item/Item.jsx'
 
 
-export const Itemlist = ({productos}) => {
+const Itemlist = ({productos}) => {
     console.log(productos)
     return (
         <>
