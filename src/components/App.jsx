@@ -2,15 +2,17 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
-import NavBar from './Navbar/navBar'
-import { ItemListContainer } from './ItemListContainer/ItemListContainer';
-import  Itemlist from './itemlist/itemlist'
-import  Item  from './item/item';
+import NavBar from './Navbar/NavBar.jsx'
+import  ItemListContainer  from './ItemListContainer/ItemListContainer.jsx';
+
+import  Item  from './Item/Item.jsx';
 function App() {
   return ( <>
     
     <NavBar/>
-    <Itemlist productos={[{
+    <ItemListContainer/>
+    <Itemlist/>
+    <Item item={ productos=[{
     "id":1,
     "idCategoria":1,
     "producto":"Guantes",
@@ -72,9 +74,8 @@ function App() {
                         "img":"../img/barra-rogue-modi-list.jpg"}
 
 
-    ]} />
-    <Item/>
-    <ItemListContainer/>
+    ] }/>
+    
 
   </>
   );

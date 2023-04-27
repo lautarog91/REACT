@@ -9,4 +9,4 @@ export const Cartwidget = ({cantCarrito}) => {
     );
 }
 
-
+export default Cartwidget;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
-import Itemlist from '../itemlist/itemlist';
+import Itemlist from '../Itemlist/Itemlist.jsx';
 const BDD=[
     {
         "id":1,
@@ -92,4 +92,4 @@ promesa(true)
     );
 }
 
-
+export default ItemListContainer;
