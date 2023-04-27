@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
-import Itemlist from '../Itemlist/Itemlist.jsx';
+import Itemlist from '../itemlist/itemlist.jsx';
 const BDD=[
     {
         "id":1,
@@ -10,7 +10,7 @@ const BDD=[
         
         "precio":"$33000",
         "stock":32,
-        "img":"../img/guantes-modi-list.jpg"},
+        "img":"../../../public/img/guantes-modi-list.jpg"},
     
         {
             "id":2,
@@ -20,7 +20,7 @@ const BDD=[
             
             "precio":"$4000",
             "stock":32,
-            "img":"../img/soga-modi-list.jpg"},
+            "img":"img/soga-modi-list.jpg"},
     
             {
                 "id":3,
