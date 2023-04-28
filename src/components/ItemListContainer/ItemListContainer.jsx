@@ -10,7 +10,7 @@ const BDD=[
         
         "precio":"$33000",
         "stock":32,
-        "img":"../../../public/img/guantes-modi-list.jpg"},
+        "img":"/img/guantes300x300.jpg"},
     
         {
             "id":2,
@@ -20,7 +20,7 @@ const BDD=[
             
             "precio":"$4000",
             "stock":32,
-            "img":"img/soga-modi-list.jpg"},
+            "img":"/img/soga300x300.jpg"},
     
             {
                 "id":3,
@@ -30,7 +30,7 @@ const BDD=[
                 
                 "precio":"$35000",
                 "stock":32,
-                "img":"../img/bolsa-boxeo-modi-lista.jpg"},
+                "img":"/img/bolsabox300x300.jpg"},
     
     
                 {
@@ -41,7 +41,7 @@ const BDD=[
                     
                     "precio":"$30000",
                     "stock":32,
-                    "img":"../img/mancuernas-modi-list.jpg"},
+                    "img":"/img/mancuernas300x300.jpg"},
     
                     {
                         "id":5,
@@ -51,7 +51,7 @@ const BDD=[
                         
                         "precio":"$3000",
                         "stock":32,
-                    "img":"../img/pesa-rusa-modi-list.jpg"},
+                    "img":"/img/pesarusa300x300.jpg"},
     
                         {
                             "id":6,
@@ -61,7 +61,7 @@ const BDD=[
                             
                             "precio":"$150000",
                             "stock":32,
-                            "img":"../img/barra-rogue-modi-list.jpg"}
+                            "img":"/img/barraolimp300x300.jpg"}
 
 ]
 export const ItemListContainer = () => {

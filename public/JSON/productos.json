@@ -7,7 +7,7 @@
     
     "precio":"$33000",
     "stock":32,
-    "img":"../img/guantes-modi-list.jpg"},
+    "img":"../img/guantes300x300.jpg"},
 
     {
         "id":2,
@@ -17,7 +17,7 @@
         
         "precio":"$4000",
         "stock":32,
-        "img":"../img/soga-modi-list.jpg"},
+        "img":"../img/soga300x300.jpg"},
 
         {
             "id":3,
@@ -27,7 +27,7 @@
             
             "precio":"$35000",
             "stock":32,
-            "img":"../img/bolsa-boxeo-modi-lista.jpg"},
+            "img":"../img/bolsabox300x300.jpg"},
 
 
             {
@@ -38,7 +38,7 @@
                 
                 "precio":"$30000",
                 "stock":32,
-                "img":"../img/mancuernas-modi-list.jpg"},
+                "img":"../img/mancuernas300x300.jpg"},
 
                 {
                     "id":5,
@@ -48,7 +48,7 @@
                     
                     "precio":"$3000",
                     "stock":32,
-                "img":"../img/pesa-rusa-modi-list.jpg"},
+                "img":"../img/pesarusa300x300.jpg"},
 
                     {
                         "id":6,
@@ -58,7 +58,7 @@
                         
                         "precio":"$150000",
                         "stock":32,
-                        "img":"../img/barra-rogue-modi-list.jpg"}
+                        "img":"../img/barraolimp300x300.jpg"}
 
                         
 
