@@ -58,8 +58,78 @@
                         
                         "precio":"$150000",
                         "stock":32,
-                        "img":"/img/barraolimp300x300.jpg"}
+                        "img":"/img/barraolimp300x300.jpg"},
 
+                    {
+                        "id":7,
+                        "idCategoria":1,
+                        "producto":"Aislante-colchoneta",
+                        "marca":"Pro-train",
                         
+                        "precio":"$2000",
+                        "stock":32,
+                        "img":"/img/aislante300x300.jpg"},
+                        
+                        
+                        {
+                            "id":8,
+                        "idCategoria":2,
+                        "producto":"Pelota de baloncesto",
+                        "marca":"Spalding",
+                        
+                        "precio":"$3000",
+                        "stock":32,
+                        "img":"/img/baloncesto300x300.jpg" 
+                        },
+
+                    {  "id":9,
+                        "idCategoria":3,
+                        "producto":"Cinta para correr",
+                        "marca":"World Fitness",
+                        
+                        "precio":"$450000",
+                        "stock":32,
+                        "img":"/img/cinta300x300.jpg"},
+
+
+                        {  "id":10,
+                        "idCategoria":2,
+                        "producto":"Pelota de futbol",
+                        "marca":"Adidas",
+                        
+                        "precio":"$22000",
+                        "stock":32,
+                        "img":"/img/futbol300x300.jpg"},
+
+                        {  "id":11,
+                        "idCategoria":1,
+                        "producto":"Jaula de potencia",
+                        "marca":"World Fitness",
+                        
+                        "precio":"$450000",
+                        "stock":32,
+                        "img":"/img/rackgym300x300.jpg"},
+
+
+                        {  "id":12,
+                        "idCategoria":2,
+                        "producto":"Pelota de rugby",
+                        "marca":"Wilson",
+                        
+                        "precio":"$45000",
+                        "stock":32,
+                        "img":"/img/rugby300x300.jpg"},
+                        
+                        {  "id":13,
+                        "idCategoria":2,
+                        "producto":"Pelota de tennis",
+                        "marca":"Wilson",
+                        
+                        "precio":"$5000",
+                        "stock":32,
+                        "img":"/img/tennis300x300.jpg"}
+
+
+
 
 ]
