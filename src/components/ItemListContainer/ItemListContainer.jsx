@@ -67,10 +67,10 @@ const BDD=[
 ]
 export const ItemListContainer = () => {
 const[productos,setproductos]=useState([])
-const category=useParams()
+const { category}=useParams()
 useEffect (()=>{
     if(category){
-        fetch('../json/productos.json')
+        fetch('/JSON/productos.json')
         .then(response=>response.json())
         
         .then (productos=>{
@@ -80,7 +80,7 @@ useEffect (()=>{
             .catch(error=>console.error(error))
     }
     else{
-fetch('./json/productos.json')
+fetch('/JSON/productos.json')
 .then(response=>response.json())
 
 .then (productos=>{
@@ -90,7 +90,7 @@ fetch('./json/productos.json')
     .catch(error=>console.error(error))
 }
 
-},[]
+},[category]
 )
 
     

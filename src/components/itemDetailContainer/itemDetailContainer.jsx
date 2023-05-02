@@ -7,9 +7,9 @@ import React from 'react';
 const ItemDetailContainer = () => {
 
 const[Item,setItem]=useState([])
-const {id}=useParams
+const {id}=useParams()
 useEffect(()=>{
-    fetch('../JSON/productos.json')
+    fetch('/JSON/productos.json')
     .then(Response=>Response.json())
     .then(productos=>{
         const prod =productos.find(prod=>prod.id===parseInt(id))
