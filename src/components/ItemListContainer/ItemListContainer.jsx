@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
 import Itemlist from '../itemlist/itemlist.jsx';
+import { useParams } from 'react-router-dom';
 const BDD=[
     {
         "id":1,
@@ -14,7 +15,7 @@ const BDD=[
     
         {
             "id":2,
-            "idCategoria":2,
+            "idCategoria":1,
             "producto":"Soga",
             "marca":"Everlast",
             
@@ -24,7 +25,7 @@ const BDD=[
     
             {
                 "id":3,
-                "idCategoria":3,
+                "idCategoria":1,
                 "producto":"Bolsa de boxeo",
                 "marca":"Fight-tech",
                 
@@ -35,7 +36,7 @@ const BDD=[
     
                 {
                     "id":4,
-                    "idCategoria":4,
+                    "idCategoria":1,
                     "producto":"Mancuernas",
                     "marca":"Pro-train",
                     
@@ -45,7 +46,7 @@ const BDD=[
     
                     {
                         "id":5,
-                        "idCategoria":5,
+                        "idCategoria":1,
                         "producto":"Pesa rusa",
                         "marca":"Pro-train",
                         
@@ -55,7 +56,7 @@ const BDD=[
     
                         {
                             "id":6,
-                            "idCategoria":6,
+                            "idCategoria":1,
                             "producto":"Barra olimpica + 50 kg",
                             "marca":"Rouge",
                             
@@ -66,18 +67,28 @@ const BDD=[
 ]
 export const ItemListContainer = () => {
 const[productos,setproductos]=useState([])
+const category=useParams()
 useEffect (()=>{
-const promesa=()=>
-new Promise((resolve, reject) => {
-    
-    if (true){resolve(BDD)}
-    reject("No posee permisos necesarios")
-})
-promesa(true)
+    if(category){
+        fetch('../json/productos.json')
+        .then(response=>response.json())
+        
+        .then (productos=>{
+            const productosFiltrados=productos.filter(prod=>prod.stock>0).filter(prod=>prod.idCategoria===parseInt(category))
+            const items=< Itemlist productos={productosFiltrados}/>
+            setproductos(items)})
+            .catch(error=>console.error(error))
+    }
+    else{
+fetch('./json/productos.json')
+.then(response=>response.json())
+
 .then (productos=>{
-    const items=< Itemlist productos={productos}/>
+    const productosFiltrados=productos.filter(prod=>prod.stock>0)
+    const items=< Itemlist productos={productosFiltrados}/>
     setproductos(items)})
     .catch(error=>console.error(error))
+}
 
 },[]
 )

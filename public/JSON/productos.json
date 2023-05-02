@@ -7,58 +7,58 @@
     
     "precio":"$33000",
     "stock":32,
-    "img":"../img/guantes300x300.jpg"},
+    "img":"/img/guantes300x300.jpg"},
 
     {
         "id":2,
-        "idCategoria":2,
+        "idCategoria":1,
         "producto":"Soga",
         "marca":"Everlast",
         
         "precio":"$4000",
         "stock":32,
-        "img":"../img/soga300x300.jpg"},
+        "img":"/img/soga300x300.jpg"},
 
         {
             "id":3,
-            "idCategoria":3,
+            "idCategoria":2,
             "producto":"Bolsa de boxeo",
             "marca":"Fight-tech",
             
             "precio":"$35000",
             "stock":32,
-            "img":"../img/bolsabox300x300.jpg"},
+            "img":"/img/bolsabox300x300.jpg"},
 
 
             {
                 "id":4,
-                "idCategoria":4,
+                "idCategoria":1,
                 "producto":"Mancuernas",
                 "marca":"Pro-train",
                 
                 "precio":"$30000",
                 "stock":32,
-                "img":"../img/mancuernas300x300.jpg"},
+                "img":"/img/mancuernas300x300.jpg"},
 
                 {
                     "id":5,
-                    "idCategoria":5,
+                    "idCategoria":1,
                     "producto":"Pesa rusa",
                     "marca":"Pro-train",
                     
                     "precio":"$3000",
                     "stock":32,
-                "img":"../img/pesarusa300x300.jpg"},
+                "img":"/img/pesarusa300x300.jpg"},
 
                     {
                         "id":6,
-                        "idCategoria":6,
+                        "idCategoria":1,
                         "producto":"Barra olimpica + 50 kg",
                         "marca":"Rouge",
                         
                         "precio":"$150000",
                         "stock":32,
-                        "img":"../img/barraolimp300x300.jpg"}
+                        "img":"/img/barraolimp300x300.jpg"}
 
                         
 
