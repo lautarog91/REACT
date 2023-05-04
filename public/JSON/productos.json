@@ -127,9 +127,35 @@
                         
                         "precio":"$5000",
                         "stock":32,
-                        "img":"/img/tennis300x300.jpg"}
+                        "img":"/img/tennis300x300.jpg"},
+
+                        {  "id":14,
+                        "idCategoria":3,
+                        "producto":"Banco declinado",
+                        "marca":"World Fitness",
+                        
+                        "precio":"$35000",
+                        "stock":32,
+                        "img":"/img/banco300x300.jpg"},
+
+                        {  "id":15,
+                        "idCategoria":3,
+                        "producto":"Maquina de remo",
+                        "marca":"World Fitness",
+                        
+                        "precio":"$40000",
+                        "stock":32,
+                        "img":"/img/maquinaderemo300x300.jpg"},
 
 
+                        {  "id":16,
+                        "idCategoria":2,
+                        "producto":"Pelota de voley",
+                        "marca":"Mikasa",
+                        
+                        "precio":"$22000",
+                        "stock":32,
+                        "img":"/img/pelotavoley300x300.jpg"}
 
 
 ]

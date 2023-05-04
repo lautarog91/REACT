@@ -4,38 +4,28 @@ import {Link} from 'react-router-dom'
 export const NavBar = () => {
   return (  
   <div>
-    <nav className="navbar navbar-expand-lg navbar-light bg-danger ">
-  <div className="container-fluid">
-  <li className='nav-item'>
-    <Link className='nav-link'to={"/"}><button className='btn btn-secondary'>Super Tienda deportiva.
-      </button>
-      </Link>
-  </li>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-      <li className='nav-item'>
-    <Link className='nav-link'to={"/category/1"}><button className='btn btn-secondary'>Articulos
-      </button>
-      </Link>
-  </li>
-  <li className='nav-item'>
-    <Link className='nav-link'to={"/category/2"}><button className='btn btn-secondary'>Pelotas
-      </button>
-      </Link>
-  </li>
-  <li className='nav-item'>
-    <Link className='nav-link'to={"/category/3"}><button className='btn btn-secondary'>Maquinas
-      </button>
-      </Link>
-  </li>
-        
-      
-    
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <Link className='nav-link'to={"/"}><a class="navbar-brand" href="#">Super tienda deportiva</a></Link>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        <Link className='nav-link'to={"/category/1"}><a class="nav-link active" aria-current="page" href="#">Articulos</a></Link>
+        </li>
+
+        <li class="nav-item">
+        <Link className='nav-link'to={"/category/2"}><a class="nav-link active" aria-current="page" href="#">Pelotas</a></Link>
+        </li>
+
+        <li class="nav-item">
+        <Link className='nav-link'to={"/category/3"}><a class="nav-link active" aria-current="page" href="#">Maquinas</a></Link>
+        </li>
       </ul>
-      <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
+    
     </div>
   </div>
 </nav>
