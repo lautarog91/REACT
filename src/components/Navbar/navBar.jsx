@@ -5,7 +5,7 @@ export const NavBar = () => {
   return (  
   <div>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-danger">
   <div class="container-fluid">
     <Link className='nav-link'to={"/"}><a class="navbar-brand" href="#">Super tienda deportiva</a></Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
