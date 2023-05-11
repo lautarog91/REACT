@@ -2,72 +2,12 @@ import React from 'react';
 import { useState,useEffect } from 'react';
 import Itemlist from '../itemlist/itemlist.jsx';
 import { useParams } from 'react-router-dom';
-const BDD=[
-    {
-        "id":1,
-        "idCategoria":1,
-        "producto":"Guantes",
-        "marca":"Everlast",
-        
-        "precio":"$33000",
-        "stock":32,
-        "img":"/img/guantes300x300.jpg"},
-    
-        {
-            "id":2,
-            "idCategoria":1,
-            "producto":"Soga",
-            "marca":"Everlast",
-            
-            "precio":"$4000",
-            "stock":32,
-            "img":"/img/soga300x300.jpg"},
-    
-            {
-                "id":3,
-                "idCategoria":1,
-                "producto":"Bolsa de boxeo",
-                "marca":"Fight-tech",
-                
-                "precio":"$35000",
-                "stock":32,
-                "img":"/img/bolsabox300x300.jpg"},
-    
-    
-                {
-                    "id":4,
-                    "idCategoria":1,
-                    "producto":"Mancuernas",
-                    "marca":"Pro-train",
-                    
-                    "precio":"$30000",
-                    "stock":32,
-                    "img":"/img/mancuernas300x300.jpg"},
-    
-                    {
-                        "id":5,
-                        "idCategoria":1,
-                        "producto":"Pesa rusa",
-                        "marca":"Pro-train",
-                        
-                        "precio":"$3000",
-                        "stock":32,
-                    "img":"/img/pesarusa300x300.jpg"},
-    
-                        {
-                            "id":6,
-                            "idCategoria":1,
-                            "producto":"Barra olimpica + 50 kg",
-                            "marca":"Rouge",
-                            
-                            "precio":"$150000",
-                            "stock":32,
-                            "img":"/img/barraolimp300x300.jpg"}
-
-]
+import { useDarkModeContext } from '../../context/DarkModeContext.js';
 export const ItemListContainer = () => {
 const[productos,setproductos]=useState([])
 const { category}=useParams()
+const {darkMode}=useDarkModeContext()
+console.log(darkMode)
 useEffect (()=>{
     if(category){
         fetch('/JSON/productos.json')

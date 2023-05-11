@@ -1,2 +1,9 @@
-body{background-color: rgb(244, 242, 208);}
+.body{background-color: rgb(244, 242, 208);}
+
+
+.card-body{background-color: white;margin-bottom: 3px;text-align: center;}
+
+.card-bodyDark{background-color: hsl(0, 0,33);margin-bottom: 3px;text-align: center;}
+
+.darkMode{background-color: black;color: gainsboro;}
 
