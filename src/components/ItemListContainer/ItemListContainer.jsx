@@ -15,8 +15,8 @@ useEffect (()=>{
         
         .then (productos=>{
             const productosFiltrados=productos.filter(prod=>prod.stock>0).filter(prod=>prod.idCategoria===parseInt(category))
-            const items= < ItemList productos={productosFiltrados}/>
-            setproductos(items)})
+            
+            setproductos(productosFiltrados)})
             .catch(error=>console.error(error))
     }
     else{
@@ -25,8 +25,8 @@ fetch('/JSON/productos.json')
 
 .then (productos=>{
     const productosFiltrados=productos.filter(prod=>prod.stock>0)
-    const items= < ItemList productos={productosFiltrados}/>
-    setproductos(items)})
+   
+    setproductos(productosFiltrados)})
     .catch(error=>console.error(error))
 }
 
