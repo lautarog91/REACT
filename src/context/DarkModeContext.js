@@ -1,6 +1,6 @@
 import { useState,createContext,useContext } from "react";
 
-const DarkModeContext=createContext
+const DarkModeContext=createContext()
 export const useDarkModeContext=()=>useContext(DarkModeContext)
 export const DarkModeProvider=(props)=>{
 
@@ -18,11 +18,8 @@ else{document.body.classList.remove('darkMode')}
 return(
     <DarkModeContext.Provider value={{darkMode,toggleDarkMode}}>
         {props.children}
-
-
-        </DarkModeContext.Provider>
+ </DarkModeContext.Provider>
 
 
 )}
-
 

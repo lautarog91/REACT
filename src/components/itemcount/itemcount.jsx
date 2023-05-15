@@ -1,21 +1,16 @@
-import Usecount from '../../hooks/usecount'
-import React from 'react';
+import  UseCount  from "../../hooks/usecount.js"
 
-const Itemcount = ({valInicial,min,max}) => {
-    const{count,minus,sum,reset}=Usecount(1,1,32)
+export const ItemCount = ({ ValInicial, min, max, onAdd }) => {
 
+const { count, minus, sum, reset } = UseCount(ValInicial, min, max)
 
-    return (
-        <div>
-            <button className="btn btn-dark" onClick={()=> minus()}>-</button>
-            {count}
-            <button className="btn btn-dark" onClick={()=> sum()}>+</button>
-
-            <button className="btn btn-dark" onClick={()=> reset()}>Reset</button>
-
-            <button className="btn btn-light" >Agregar al carro</button>
-        </div>
-    );
+return (
+    <>
+    <button className="btn btn-dark" onClick={minus}>-</button>
+    {count}
+    <button className="btn btn-dark" onClick={sum}>+</button>
+    <button className="btn btn-dark" onClick={reset}>Reset</button>
+    <button className="btn btn-light" onClick={() => onAdd(count)}>Agregar al Carrito</button>
+    </>
+)
 }
-
-export default Itemcount;

@@ -1,30 +1,26 @@
-import { useState,useEffect } from "react";
-import ItemDetail from '../itemDetail/itemDetail.jsx';
-import { useParams } from "react-router-dom";
+//Consulto un unico producto de mi BDD
+import { useEffect, useState } from "react"
+import { ItemDetail } from "../itemDetail/itemDetail"
+import { useParams } from "react-router-dom"
 
-import React from 'react';
+export const ItemDetailContainer = () => {
 
-const ItemDetailContainer = () => {
+    const [item, setItem] = useState([])
+    const { id } = useParams()
 
-const[Item,setItem]=useState([])
-const {id}=useParams()
-useEffect(()=>{
-    fetch('/JSON/productos.json')
-    .then(Response=>Response.json())
-    .then(productos=>{
-        const prod =productos.find(prod=>prod.id===parseInt(id))
-        setItem(prod)
-    })
+    useEffect(() => {
+        fetch('../json/productos.json') //.. por estar en una ruta mas en profundidad de mi aplicacion
+            .then(response => response.json())
+            .then(productos => {
+                const prod = productos.find(prod => prod.id === parseInt(id))
+                setItem(prod)
+            })
 
-},[])
-
+    }, [])
 
     return (
-        <div class="card mb-3 container itemDetail">
-            <ItemDetail item={Item} />
-            
+        <div className="card mb-3 container itemDetail">
+            <ItemDetail item={item} />
         </div>
-    );
+    )
 }
-
-export default ItemDetailContainer;

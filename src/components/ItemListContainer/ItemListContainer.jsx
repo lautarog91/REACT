@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
-import Itemlist from '../itemlist/itemlist.jsx';
+import { ItemList} from '../itemlist/itemlist';
 import { useParams } from 'react-router-dom';
 import { useDarkModeContext } from '../../context/DarkModeContext.js';
 export const ItemListContainer = () => {
@@ -15,7 +15,7 @@ useEffect (()=>{
         
         .then (productos=>{
             const productosFiltrados=productos.filter(prod=>prod.stock>0).filter(prod=>prod.idCategoria===parseInt(category))
-            const items=< Itemlist productos={productosFiltrados}/>
+            const items= < ItemList productos={productosFiltrados}/>
             setproductos(items)})
             .catch(error=>console.error(error))
     }
@@ -25,7 +25,7 @@ fetch('/JSON/productos.json')
 
 .then (productos=>{
     const productosFiltrados=productos.filter(prod=>prod.stock>0)
-    const items=< Itemlist productos={productosFiltrados}/>
+    const items= < ItemList productos={productosFiltrados}/>
     setproductos(items)})
     .catch(error=>console.error(error))
 }
@@ -36,11 +36,10 @@ fetch('/JSON/productos.json')
     
     
     return (
-        <div className='row'>
-            {productos}
-            
-        </div>
+        <div className="row">
+    {<ItemList productos={productos} plantilla={"Item"} />}
+    </div>
     );
 }
 
-export default ItemListContainer;
+
