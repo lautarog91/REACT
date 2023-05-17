@@ -3,17 +3,17 @@ import { useCarritoContext } from "../../context/CartContext"
 import { Link } from "react-router-dom"
 export const Checkout = () => {
 
-    const datForm = useRef() //Crear una referencia para consultar los valoresa actuales del form
+    const datForm = useRef() 
     const { carrito, totalPrice, emptyCart } = useCarritoContext()
 
     const consultarForm = (e) => {
-        //Consultar los datos del formulario
+    
         e.preventDefault()
         console.log(datForm)
-        const datosFormulario = new FormData(datForm.current) //Pasar de HTML a Objeto Iterable
-        const cliente = Object.fromEntries(datosFormulario) //Pasar de objeto iterable a objeto simple
+        const datosFormulario = new FormData(datForm.current) 
+        const cliente = Object.fromEntries(datosFormulario) 
         console.log(cliente)
-        e.target.reset() //Reset form
+        e.target.reset() 
     }
     return (
         <>

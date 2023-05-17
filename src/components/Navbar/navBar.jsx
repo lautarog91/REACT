@@ -26,13 +26,13 @@ export const NavBar = () => {
         <Link className='nav-link'to={"/category/3"}><a class="nav-link active" aria-current="page" href="#">Maquinas</a></Link>
         </li>
       </ul>
-    
+    < CartWidget cantCarrito = {0} />
+<BotonDarkMode/>
     </div>
   </div>
 </nav>
 
-< CartWidget cantCarrito = {0} />
-<BotonDarkMode/>
+
 </div>
   )
 }
