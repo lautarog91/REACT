@@ -20,7 +20,7 @@ const bdd=getFirestore()
 
 
 export const createProducts = async () => {
-    const promise = await fetch('./json/productos.json')
+    const promise = await fetch('./JSON/productos.json')
     const productos = await promise.json()
     productos.forEach(async (prod) => {
         await addDoc(collection(bdd, "productos"), { 
