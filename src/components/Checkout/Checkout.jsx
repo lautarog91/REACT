@@ -21,12 +21,12 @@ export const Checkout = () => {
     
         const aux = [...carrito]
 
-        //Recorrer mi carrito y descontar el stock
+        
         aux.forEach(prodCarrito => {
             getProduct(prodCarrito.id).then(prodBBD => {
-                if (prodBBD.stock >= prodCarrito.quantity) { //Si el stock de mi producto en la BDD es mayor o igual a la cantidad que el cliente quiere comprar de mi producto, descuento el stock
+                if (prodBBD.stock >= prodCarrito.quantity) { 
                     prodBBD.stock -= prodCarrito.quantity
-                    updateProduct(prodBBD.id, prodBBD) //Enviarle a la BDD el producto descontando su stock
+                    updateProduct(prodBBD.id, prodBBD) 
                 } else {
                     console.log("El stock no es mayor o igual a la cantidad que se quiere comprar")
                 }
@@ -48,8 +48,8 @@ export const Checkout = () => {
                     theme: "dark",
                 });
                 emptyCart()
-                e.target.reset() //Reset form
-                navigate("/") //Defino la ruta hacia donde quiero redirigir
+                e.target.reset() 
+                navigate("/") 
             })
             .catch(error => {
                 console.error(error)

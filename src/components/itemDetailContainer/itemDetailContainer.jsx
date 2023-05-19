@@ -1,4 +1,4 @@
-//Consulto un unico producto de mi BDD
+
 import { useEffect, useState } from "react"
 import { ItemDetail } from "../itemDetail/itemDetail"
 import { useParams } from "react-router-dom"

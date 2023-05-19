@@ -13,7 +13,7 @@ messagingSenderId: "79606244704",
 appId: "1:79606244704:web:3823297ba8f3d7289f2a05"
 };
 
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
 
 const bdd=getFirestore()
@@ -47,8 +47,8 @@ export const getProduct = async (id) => {
     const item = { ...prod.data(), id: prod.id }
     return item
 }
-//1 o 0
-//Tanto Update como Delete no devuelven un estado
+
+
 export const updateProduct = async (id, info) => {
     await updateDoc(doc(bdd, "productos", id), info)
 }
@@ -57,7 +57,7 @@ export const deleteProduct = async (id) => {
     await deleteDoc(doc(bdd, "productos", id))
 }
 
-// CREATE y READ OrdenCompra
+
 
 export const createOrdenCompra = async (cliente, precioTotal, carrito, fecha) => {
     const ordenCompra = await addDoc(collection(bdd, "ordenCompra"), {

@@ -11,7 +11,7 @@ const {darkMode}=useDarkModeContext()
 
 useEffect(() => {
 
-    if (category) { //Consulto si me ingresaron un parametro en la url
+    if (category) { 
     getProducts()
         .then(productos => {
         const productosFiltrados = productos.filter(prod => prod.stock > 0).filter(prod => prod.idCategoria === parseInt(category))

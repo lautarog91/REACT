@@ -3,7 +3,7 @@ import { useCarritoContext } from "../../context/CartContext"
 export const ItemDetail = ({ item }) => {
     const { addItem } = useCarritoContext()
 
-    const onAdd = (contador) => { //Agregar al carrito 
+    const onAdd = (contador) => { 
         addItem(item, contador)
     }
 
