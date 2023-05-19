@@ -9,7 +9,9 @@ import { ItemDetailContainer} from './itemDetailContainer/itemDetailContainer';
 import { Checkout } from './Checkout/Checkout'
 import { DarkModeProvider } from '../context/DarkModeContext'
 import { Cart } from './Cart/Cart';
-function App() {
+import { createProducts } from '../firebase/firebase.js';
+const App=()=> {
+  createProducts()
   return ( <>
   <BrowserRouter>
   <DarkModeProvider>

@@ -5,9 +5,9 @@
     "producto":"Guantes",
     "marca":"Everlast",
     
-    "precio":"$33000",
+    "precio":"33000",
     "stock":32,
-    "img":"/img/guantes300x300.jpg"},
+    "img":"https://firebasestorage.googleapis.com/v0/b/super-tienda-deportiva-react.appspot.com/o/guantes300x300.jpg?alt=media&token=b590c325-f167-46ca-ad3c-7b2abe2f5bc2"},
 
     {
         "id":2,
@@ -15,9 +15,9 @@
         "producto":"Soga",
         "marca":"Everlast",
         
-        "precio":"$4000",
+        "precio":"4000",
         "stock":32,
-        "img":"/img/soga300x300.jpg"},
+        "img":"https://firebasestorage.googleapis.com/v0/b/super-tienda-deportiva-react.appspot.com/o/soga300x300.jpg?alt=media&token=282efc78-13ab-4931-9347-8572b80e8f19"},
 
         {
             "id":3,
@@ -25,9 +25,9 @@
             "producto":"Bolsa de boxeo",
             "marca":"Fight-tech",
             
-            "precio":"$35000",
+            "precio":"35000",
             "stock":32,
-            "img":"/img/bolsabox300x300.jpg"},
+            "img":"https://firebasestorage.googleapis.com/v0/b/super-tienda-deportiva-react.appspot.com/o/bolsabox300x300.jpg?alt=media&token=c967ee0b-39c0-4942-aa93-a4df27e81a09"},
 
 
             {
@@ -36,9 +36,9 @@
                 "producto":"Mancuernas",
                 "marca":"Pro-train",
                 
-                "precio":"$30000",
+                "precio":"30000",
                 "stock":32,
-                "img":"/img/mancuernas300x300.jpg"},
+                "img":"https://firebasestorage.googleapis.com/v0/b/super-tienda-deportiva-react.appspot.com/o/mancuernas300x300.jpg?alt=media&token=d56b11b0-9fc9-41b2-a308-1c9e7b411435"},
 
                 {
                     "id":5,
@@ -46,9 +46,9 @@
                     "producto":"Pesa rusa",
                     "marca":"Pro-train",
                     
-                    "precio":"$3000",
+                    "precio":"3000",
                     "stock":32,
-                "img":"/img/pesarusa300x300.jpg"},
+                "img":"https://firebasestorage.googleapis.com/v0/b/super-tienda-deportiva-react.appspot.com/o/pesarusa300x300.jpg?alt=media&token=95dc6ee2-4e41-46d3-976b-4b15f15dac38"},
 
                     {
                         "id":6,
@@ -56,9 +56,9 @@
                         "producto":"Barra olimpica + 50 kg",
                         "marca":"Rouge",
                         
-                        "precio":"$150000",
+                        "precio":"150000",
                         "stock":32,
-                        "img":"/img/barraolimp300x300.jpg"},
+                        "img":"https://firebasestorage.googleapis.com/v0/b/super-tienda-deportiva-react.appspot.com/o/barraolimp300x300.jpg?alt=media&token=3fa214cf-3e48-4319-8a5e-482d47c4b4b4"},
 
                     {
                         "id":7,
@@ -66,9 +66,9 @@
                         "producto":"Aislante-colchoneta",
                         "marca":"Pro-train",
                         
-                        "precio":"$2000",
+                        "precio":"2000",
                         "stock":32,
-                        "img":"/img/aislante300x300.jpg"},
+                        "img":"https://firebasestorage.googleapis.com/v0/b/super-tienda-deportiva-react.appspot.com/o/aislante300x300.jpg?alt=media&token=4210727e-f6ee-4550-be0d-10235cc5edee"},
                         
                         
                         {
@@ -77,9 +77,9 @@
                         "producto":"Pelota de baloncesto",
                         "marca":"Spalding",
                         
-                        "precio":"$3000",
+                        "precio":"3000",
                         "stock":32,
-                        "img":"/img/baloncesto300x300.jpg" 
+                        "img":"https://firebasestorage.googleapis.com/v0/b/super-tienda-deportiva-react.appspot.com/o/baloncesto300x300.jpg?alt=media&token=6c00d0d1-26b5-4ba9-80df-d0a5c906dc2c" 
                         },
 
                     {  "id":9,
@@ -87,9 +87,9 @@
                         "producto":"Cinta para correr",
                         "marca":"World Fitness",
                         
-                        "precio":"$450000",
+                        "precio":"450000",
                         "stock":32,
-                        "img":"/img/cinta300x300.jpg"},
+                        "img":"https://firebasestorage.googleapis.com/v0/b/super-tienda-deportiva-react.appspot.com/o/cinta300x300.jpg?alt=media&token=a4848c33-c632-4be6-8c21-89adba382d55"},
 
 
                         {  "id":10,
@@ -97,18 +97,18 @@
                         "producto":"Pelota de futbol",
                         "marca":"Adidas",
                         
-                        "precio":"$22000",
+                        "precio":"22000",
                         "stock":32,
-                        "img":"/img/futbol300x300.jpg"},
+                        "img":"https://firebasestorage.googleapis.com/v0/b/super-tienda-deportiva-react.appspot.com/o/futbol300x300.jpg?alt=media&token=fa492448-8f67-4777-975f-5e7386f85e28"},
 
                         {  "id":11,
                         "idCategoria":1,
                         "producto":"Jaula de potencia",
                         "marca":"World Fitness",
                         
-                        "precio":"$450000",
+                        "precio":"450000",
                         "stock":32,
-                        "img":"/img/rackgym300x300.jpg"},
+                        "img":"https://firebasestorage.googleapis.com/v0/b/super-tienda-deportiva-react.appspot.com/o/rackgym300x300.jpg?alt=media&token=7fffccd1-f545-4f69-a0b7-5292358ea46b"},
 
 
                         {  "id":12,
@@ -116,36 +116,36 @@
                         "producto":"Pelota de rugby",
                         "marca":"Wilson",
                         
-                        "precio":"$45000",
+                        "precio":"45000",
                         "stock":32,
-                        "img":"/img/rugby300x300.jpg"},
+                        "img":"https://firebasestorage.googleapis.com/v0/b/super-tienda-deportiva-react.appspot.com/o/rugby300x300.jpg?alt=media&token=85c5a6c9-4c3a-42a1-be2b-b168d7b6768b"},
                         
                         {  "id":13,
                         "idCategoria":2,
                         "producto":"Pelota de tennis",
                         "marca":"Wilson",
                         
-                        "precio":"$5000",
+                        "precio":"5000",
                         "stock":32,
-                        "img":"/img/tennis300x300.jpg"},
+                        "img":"https://firebasestorage.googleapis.com/v0/b/super-tienda-deportiva-react.appspot.com/o/tennis300x300.jpg?alt=media&token=882137f2-d075-40ea-838a-8a38d81041a8"},
 
                         {  "id":14,
                         "idCategoria":3,
                         "producto":"Banco declinado",
                         "marca":"World Fitness",
                         
-                        "precio":"$35000",
+                        "precio":"35000",
                         "stock":32,
-                        "img":"/img/banco300x300.jpg"},
+                        "img":"https://firebasestorage.googleapis.com/v0/b/super-tienda-deportiva-react.appspot.com/o/banco300x300.jpg?alt=media&token=d88a1eeb-f895-4745-a946-6de4b85f817f"},
 
                         {  "id":15,
                         "idCategoria":3,
                         "producto":"Maquina de remo",
                         "marca":"World Fitness",
                         
-                        "precio":"$40000",
+                        "precio":"40000",
                         "stock":32,
-                        "img":"/img/maquinaderemo300x300.jpg"},
+                        "img":"https://firebasestorage.googleapis.com/v0/b/super-tienda-deportiva-react.appspot.com/o/maquinaderemo300x300.jpg?alt=media&token=a6b28772-c7d0-45d7-84e2-cb59d71ed7b1"},
 
 
                         {  "id":16,
@@ -153,9 +153,9 @@
                         "producto":"Pelota de voley",
                         "marca":"Mikasa",
                         
-                        "precio":"$22000",
+                        "precio":"22000",
                         "stock":32,
-                        "img":"/img/pelotavoley300x300.jpg"}
+                        "img":"https://firebasestorage.googleapis.com/v0/b/super-tienda-deportiva-react.appspot.com/o/pelotavoley300x300.jpg?alt=media&token=1ac3f4b0-2b20-4411-8c77-b09309a1a01b"}
 
 
 ]

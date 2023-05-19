@@ -25,7 +25,7 @@ fetch('/JSON/productos.json')
 
 .then (productos=>{
     const productosFiltrados=productos.filter(prod=>prod.stock>0)
-   
+
     setproductos(productosFiltrados)})
     .catch(error=>console.error(error))
 }

@@ -21,7 +21,7 @@ export const Checkout = () => {
                 carrito.length === 0 ?
                     <>
                         <h2>Para finalizar compra debe tener productos en el carrito</h2>
-                        <Link className="nav-link" to={"/"}><button className="btn btn-primary">Continuar comprando</button></Link>
+                        <Link className="nav-link" to={"/"}><button className="btn btn-danger">Continuar comprando</button></Link>
                     </>
                     :
                     <div className="container divForm" >
