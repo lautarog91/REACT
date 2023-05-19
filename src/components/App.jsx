@@ -10,12 +10,15 @@ import { Checkout } from './Checkout/Checkout'
 import { DarkModeProvider } from '../context/DarkModeContext'
 import { Cart } from './Cart/Cart';
 import { createProducts } from '../firebase/firebase.js';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 const App=()=> {
-  createProducts()
+//createProducts()
   return ( <>
   <BrowserRouter>
   <DarkModeProvider>
     <NavBar/>
+    <ToastContainer />
     <Routes>
       <Route path='/' element={<ItemListContainer/>} />
       <Route path='/category/:category' element={<ItemListContainer/>} />
