@@ -21,7 +21,6 @@ export const Checkout = () => {
     
         const aux = [...carrito]
 
-        
         aux.forEach(prodCarrito => {
             getProduct(prodCarrito.id).then(prodBBD => {
                 if (prodBBD.stock >= prodCarrito.quantity) { 
@@ -69,28 +68,36 @@ export const Checkout = () => {
                     <div className="container divForm" >
                         <form onSubmit={consultarForm} ref={datForm}>
                             <div className="mb-3">
-                                <label htmlFor="nombre" className="form-label">Nombre y Apellido</label>
-                                <input type="text" className="form-control" name="nombre" required />
+                                <label htmlFor="nombre" className="form-label">Nombre</label>
+                                <input type="text" className="form-control" name="nombre" title="Debes completar con tu nombre" required />
+                            </div>
+                            <div className="mb-3">
+                                <label htmlFor="apellido" className="form-label">Apellido</label>
+                                <input type="text" className="form-control" name="apellido" title="Debes completar con tu Apellido" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="email" className="form-label">Email</label>
-                                <input type="email" className="form-control" name="email" />
+                                <input type="email" className="form-control" name="email" title="Debes completar con tu email" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="email" className="form-label">Repetir Email</label>
-                                <input type="email" className="form-control" name="emailRepetido" />
+                                <input type="email" className="form-control" name="email" title="Debes completar con tu email" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="dni" className="form-label">DNI</label>
-                                <input type="number" className="form-control" name="dni" />
+                                <input type="number" className="form-control" name="dni" title="Debes completar con tu DNI" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="celular" className="form-label">Numero telefonico</label>
-                                <input type="number" className="form-control" name="celular" />
+                                <input type="number" className="form-control" name="celular" title="Debes completar con tu numero telefonico" required />
+                            </div>
+                            <div className="mb-3">
+                                <label htmlFor="pais" className="form-label">Pais</label>
+                                <input type="text" className="form-control" name="pais" title="Debes completar con tu pais de residencia" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="direccion" className="form-label">Direccion</label>
-                                <input type="text" className="form-control" name="direccion" />
+                                <input type="text" className="form-control" name="direccion" title="Debes completar con tu direccion" required/>
                             </div>
                             <button type="submit" className="btn btn-primary">Finalizar Compra</button>
                         </form>
