@@ -33,6 +33,10 @@ export const Checkout = () => {
         })
         const aux2 = aux.map(prod => ({ id: prod.id, quantity: prod.quantity, precio: prod.precio }));
 
+        if(("email").value!==("repetirEmail").value){
+            alert("El email no coincide");
+        return;}
+            else{
         createOrdenCompra(cliente, totalPrice(), aux2, new Date().toLocaleString('es-AR', { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone }))
             .then(ordenCompra => {
 
@@ -55,7 +59,7 @@ export const Checkout = () => {
             })
 
 
-    }
+    }}
     return (
         <>
             {
@@ -80,8 +84,8 @@ export const Checkout = () => {
                                 <input type="email" className="form-control" name="email" title="Debes completar con tu email" required />
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="email" className="form-label">Repetir Email</label>
-                                <input type="email" className="form-control" name="email" title="Debes completar con tu email" required />
+                                <label htmlFor="repetirEmail" className="form-label">Repetir Email</label>
+                                <input type="email" className="form-control" name="repetirEmail" title="Debes completar con tu email" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="dni" className="form-label">DNI</label>
