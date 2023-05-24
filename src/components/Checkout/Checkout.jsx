@@ -32,11 +32,10 @@ export const Checkout = () => {
             })
         })
         const aux2 = aux.map(prod => ({ id: prod.id, quantity: prod.quantity, precio: prod.precio }));
-
-        if(("email").value!==("repetirEmail").value){
+        if (cliente.email !== cliente.repetirEmail) {
             alert("El email no coincide");
-        return;}
-            else{
+            return;
+        }
         createOrdenCompra(cliente, totalPrice(), aux2, new Date().toLocaleString('es-AR', { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone }))
             .then(ordenCompra => {
 
@@ -59,7 +58,7 @@ export const Checkout = () => {
             })
 
 
-    }}
+    }
     return (
         <>
             {
