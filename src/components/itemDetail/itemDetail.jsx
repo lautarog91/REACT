@@ -9,6 +9,7 @@ export const ItemDetail = ({ item }) => {
 
     return (
         <div className="row g-0">
+            <div className="detalle"><h3>Detalle del producto</h3></div>
             <div className="col-md-4">
                 <img src={item.img} alt={`Imagen de ${item.producto}`} className="img-fluid rounded-start" />
             </div>

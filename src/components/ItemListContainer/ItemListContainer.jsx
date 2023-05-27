@@ -32,9 +32,12 @@ useEffect(() => {
     
     
     return (
+        
+
         <div className="row">
     {<ItemList productos={productos} plantilla={"Item"} />}
     </div>
+    
     );
 }
 

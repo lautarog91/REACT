@@ -33,9 +33,36 @@ export const Checkout = () => {
         })
         const aux2 = aux.map(prod => ({ id: prod.id, quantity: prod.quantity, precio: prod.precio }));
         if (cliente.email !== cliente.repetirEmail) {
-            alert("El email no coincide");
-            return;
+            toast(`❌ El email debe ser identico en ambos campos`, {
+                position: "top-right",
+                autoClose: 10000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+            });
+        return;
         }
+
+        if (cliente.nombre.length ===0 || cliente.apellido.length ===0 || cliente.email.length ===0 || cliente.repetirEmail.length ===0 || cliente.dni.length ===0
+            || cliente.celular.length ===0 || cliente.pais.length ===0 || cliente.direcion.length ===0){
+
+                toast(`❌ Falta completar campos obligatorios`, {
+                    position: "top-right",
+                    autoClose: 10000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
+            }
+        
+
+
         createOrdenCompra(cliente, totalPrice(), aux2, new Date().toLocaleString('es-AR', { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone }))
             .then(ordenCompra => {
 
@@ -72,35 +99,35 @@ export const Checkout = () => {
                         <form onSubmit={consultarForm} ref={datForm}>
                             <div className="mb-3">
                                 <label htmlFor="nombre" className="form-label">Nombre</label>
-                                <input type="text" className="form-control" name="nombre" title="Debes completar con tu nombre" required />
+                                <input type="text" className="form-control" name="nombre" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="apellido" className="form-label">Apellido</label>
-                                <input type="text" className="form-control" name="apellido" title="Debes completar con tu Apellido" required />
+                                <input type="text" className="form-control" name="apellido" required   />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="email" className="form-label">Email</label>
-                                <input type="email" className="form-control" name="email" title="Debes completar con tu email" required />
+                                <input type="email" className="form-control" name="email"  required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="repetirEmail" className="form-label">Repetir Email</label>
-                                <input type="email" className="form-control" name="repetirEmail" title="Debes completar con tu email" required />
+                                <input type="email" className="form-control" name="repetirEmail"  required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="dni" className="form-label">DNI</label>
-                                <input type="number" className="form-control" name="dni" title="Debes completar con tu DNI" required />
+                                <input type="number" className="form-control" name="dni"  required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="celular" className="form-label">Numero telefonico</label>
-                                <input type="number" className="form-control" name="celular" title="Debes completar con tu numero telefonico" required />
+                                <input type="number" className="form-control" name="celular"  required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="pais" className="form-label">Pais</label>
-                                <input type="text" className="form-control" name="pais" title="Debes completar con tu pais de residencia" required />
+                                <input type="text" className="form-control" name="pais"  required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="direccion" className="form-label">Direccion</label>
-                                <input type="text" className="form-control" name="direccion" title="Debes completar con tu direccion" required/>
+                                <input type="text" className="form-control" name="direccion"  required/>
                             </div>
                             <button type="submit" className="btn btn-primary">Finalizar Compra</button>
                         </form>
