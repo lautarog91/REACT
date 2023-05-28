@@ -7,6 +7,7 @@ import { getProducts } from "../../firebase/firebase.js"
 export const ItemListContainer = () => {
 const[productos,setproductos]=useState([])
 const { category}=useParams()
+
 const {darkMode}=useDarkModeContext()
 
 useEffect(() => {
@@ -18,7 +19,9 @@ useEffect(() => {
         setproductos(productosFiltrados)
 
         })
-    } else {
+    }
+    
+    else {
     getProducts()
         .then(productos => {
         const productosFiltrados = productos.filter(prod => prod.stock > 0)
@@ -35,6 +38,9 @@ useEffect(() => {
         
 
         <div className="row">
+            {(parseInt(category)===1)? <h3>Articulos</h3> : <h3></h3> }
+            {(parseInt(category)===2)? <h3>Pelotas</h3> : <h3></h3> }
+            {(parseInt(category)===3)? <h3>Maquinas</h3> : <h3></h3> }
     {<ItemList productos={productos} plantilla={"Item"} />}
     </div>
     

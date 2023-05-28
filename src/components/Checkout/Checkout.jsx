@@ -35,8 +35,8 @@ export const Checkout = () => {
         if (cliente.email !== cliente.repetirEmail) {
             toast(`❌ El email debe ser identico en ambos campos`, {
                 position: "top-right",
-                autoClose: 10000,
-                hideProgressBar: false,
+                autoClose: 3000,
+                hideProgressBar: true,
                 closeOnClick: true,
                 pauseOnHover: true,
                 draggable: true,
@@ -46,20 +46,7 @@ export const Checkout = () => {
         return;
         }
 
-        if (cliente.nombre.length ===0 || cliente.apellido.length ===0 || cliente.email.length ===0 || cliente.repetirEmail.length ===0 || cliente.dni.length ===0
-            || cliente.celular.length ===0 || cliente.pais.length ===0 || cliente.direcion.length ===0){
-
-                toast(`❌ Falta completar campos obligatorios`, {
-                    position: "top-right",
-                    autoClose: 10000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "dark",
-                });
-            }
+    
         
 
 
