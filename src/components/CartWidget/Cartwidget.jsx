@@ -9,7 +9,7 @@ export const CartWidget = () => {
       
         <Link to={"/cart"} className="nav-link">
         
-        <img src={carrito('./carrito.png')} alt={"imagenDeCarrito"} />
+        <img className="imgCarrito" src={carrito('./carrito.png')} alt={"imagenDeCarrito"} />
           {getItemQuantity() > 0 && <span className="cantCarrito">{getItemQuantity()}</span>}
         </Link>
       

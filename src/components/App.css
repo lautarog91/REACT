@@ -1,8 +1,10 @@
 .navbar{margin-bottom:5% ;}
 .body{background-color: rgb(244, 242, 208);}
+.imgCarrito {width: 30px;height: 30px;}
+.articulos{width: 200px;height: 100px;}
 
-.imgCarousel{width: 50%; height: 35%;margin-left: 15%;}
-
+.imgCarousel{width: 45%; height: 35%;margin-left: 26%;color: black;margin-bottom: 5%;}
+.carouselText{ font-size: 18px;font-weight: 600; color: rgb(204, 204, 173);}
 .container-fluid{margin:0,0, 5%,0 }
 
 .card{margin: 2%;}
