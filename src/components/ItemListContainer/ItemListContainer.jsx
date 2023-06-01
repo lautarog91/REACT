@@ -45,7 +45,7 @@ useEffect(() => {
     
     return ( 
         <div className="row">
-            {(parseInt(category)===1)? <img src={'img/articulosSoft'}   /> : <></> }
+            {(parseInt(category)===1)? <img src='../../../public/img/articulosSoft.jpg' alt='imgArticulos'   /> : <></> }
             {(parseInt(category)===2)? <h3>Pelotas</h3> : <></> }
             {(parseInt(category)===3)? <h3>Maquinas</h3> : <></> }
             {(category)? <></> : 
