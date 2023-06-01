@@ -9,8 +9,9 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js"
 import Carousel from 'react-bootstrap/Carousel';
 import { Container } from 'react-bootstrap';
 import CarouselComponent from '../CarouselComponent/CarouselComponent.jsx';
+import articulosSoft  from './img/articulosSoft.jpg';
 export const ItemListContainer = () => {
-const imgs= require.context ('../../../public/img', true);
+
 const[productos,setproductos]=useState([])
 const { category}=useParams()
 
@@ -44,13 +45,13 @@ useEffect(() => {
     
     return ( 
         <div className="row">
-            {(parseInt(category)===1)? <><h3>Articulos</h3> <img src="../../../public/img/articulosSoft.jpg" alt="" /></>  : <></> }
+            {(parseInt(category)===1)? <img src={'img/articulosSoft'}   /> : <></> }
             {(parseInt(category)===2)? <h3>Pelotas</h3> : <></> }
             {(parseInt(category)===3)? <h3>Maquinas</h3> : <></> }
             {(category)? <></> : 
             <Container>
-           <CarouselComponent />
-           </Container>
+        <CarouselComponent />
+        </Container>
             }
     {<ItemList productos={productos} plantilla={"Item"} />}
     </div>
