@@ -5,7 +5,7 @@ import { initializeApp } from "firebase/app";
 import {getFirestore,addDoc,getDoc,getDocs,deleteDoc,updateDoc,collection,doc} from 'firebase/firestore'
 // Your web app's Firebase configuration
 const firebaseConfig = {
-apiKey: "AIzaSyA9n4LXVfzZW6sFDNwl-nnvMimQYf46yIo",
+apiKey: process.env.API_KEY,
 authDomain: "super-tienda-deportiva-react.firebaseapp.com",
 projectId: "super-tienda-deportiva-react",
 storageBucket: "super-tienda-deportiva-react.appspot.com",

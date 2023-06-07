@@ -1,17 +1,43 @@
-.navbar{margin-bottom:5% ;}
-.body{background-color: rgb(244, 242, 208);}
-.imgCarrito {width: 30px;height: 30px;}
-.articulos{width: 50px;height: 50px;}
+.navbar{margin-bottom:0% ;}
 
-.imgCarousel{width: 45%; height: 35%;margin-left: 26%;color: black;margin-bottom: 5%;}
-.carouselText{ font-size: 18px;font-weight: 600; color: rgb(204, 204, 173);}
+.diseño{width:55px ;height: 55px; margin-right:6% ;margin-left:0% ;}
+
+.articulosEnlace{ font-size:125% ; margin-top:8% ;}
+.pelotasEnlace{font-size: 125%; margin-top: 8%;}
+.maquinasEnlace{font-size: 125%;margin-top: 8%;}
+.body{background-color: rgb(244, 242, 208);}
+.h3carrito{font-size: 77%;}
+.imgCarrito {width: 33px;height: 33px;margin-right: 1%;}
+.cantCarrito{width:0.5% ;height:0.5% ;}
+a{font-family:sans-serif ; margin-left: 10%;margin-right:10% ;font-size:250% ;}
+.articulos{width:83% ;height:50% ;margin-left: 9%;margin-bottom: 10%;margin-top: 3%;min-width:330px ;min-height:210px ;}
+.pelotas{width:83% ;height:50% ;margin-left: 9%;margin-bottom: 10%;margin-top: 3%;min-width:330px ;min-height:210px; }
+.maquinas{width:83% ;height:50% ;margin-left: 9%;margin-bottom: 10%;margin-top: 3%;min-width:330px ;min-height:210px; }
+
+.imgCarousel{width: 95%; height: 55%;margin-left: 3%;color: black;margin-bottom: 8%;margin-top: 3%;}
+.carouselText{ font-size: 22px;font-weight: 600; color: rgb(43, 30, 14);}
 .container-fluid{margin:0,0, 5%,0 }
 
-.card{margin: 2%;}
-.card-body{background-color: white;margin-bottom: 3px;text-align: center;}
+#card{width: 72%;}
+.card{margin: 2%;margin-left:10% ;}
+.card-body{background-color: white;margin-bottom: 3px;text-align: center;margin-left:2%  ;}
 
-.card-bodyDark{background-color: hsl(0, 0,33);margin-bottom: 3px;text-align: center;}
+#imagenDetalle{width:90% ;height: 85%;}
+#cardDetalle{width:20% ;margin-left:22% ;}
 
-.darkMode{background-color: rgb(68, 67, 67);color: black;}
+.detalle{margin-left: 36%;}
+.cartButtons{display: flex;flex-direction: column;justify-content: space-between;margin-left: 11%; }
+.botones{display: flex;}
+#botonVaciar{width: 15%;margin-left:0% ;}
+#botonReset{margin-left: 3%;}
 
-.detalle{margin-left: 33%;}
+.divContacto{background-color: rgb(21, 20, 20);padding-left:10% ;padding-top: 0.5%;padding-bottom: 1%;display: flex;flex-direction: column;
+    justify-content: space-around;}
+    .volver{width: 4%;height: 4%;}
+    .divImg{display: flex;flex-direction: row; justify-content:flex-start;padding-right:65% ;}
+    .Buscanos{color:white ;font-size:160% ;margin-top:3.3% ;margin-right:5% ;}
+.linkedin{height:27px ;width:27px ;}
+.github{height: 27px;width:27px;}
+.divDirecc{display: flex;flex-direction: column;justify-content:flex-start;}
+.contactoMail{color: white;font-family: sans-serif;margin-bottom:1% ;font-size: 100%;margin-right: 5%;}
+.contactoTelefono{color: white;font-family: sans-serif;font-size: 100%;}

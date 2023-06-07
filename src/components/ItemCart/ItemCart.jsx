@@ -2,7 +2,7 @@ import { useCarritoContext } from "../../context/CartContext"
 export const ItemCart = ({ item }) => {
     const { removeItem } = useCarritoContext()
     return (
-        <div className="card mb-3 cardCart">
+        <div className="card mb-3 cardCart" id="card">
             <div className="row g-0">
                 <div className="col-md-4">
                     <img src={item.img} className="img-fluid rounded-start" alt={`Imagen de ${item.producto}`} />
