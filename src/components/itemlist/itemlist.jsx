@@ -1,4 +1,4 @@
-import { Item } from "../Item/Item"
+import { Item } from "../item/item"
 import { ItemCart } from "../ItemCart/ItemCart"
 
 export const ItemList = ({ productos, plantilla }) => {
